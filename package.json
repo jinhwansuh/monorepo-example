@@ -5,6 +5,9 @@
       "package/*"
     ]
   },
+  "scripts": {
+    "front-dev": "yarn workspace vite-project dev"
+  },
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
     "@types/node": "^18.8.5",
