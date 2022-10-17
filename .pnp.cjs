@@ -18,13 +18,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {\
         "name": "vite-project",\
         "reference": "workspace:package/vite-project"\
+      },\
+      {\
+        "name": "vite2",\
+        "reference": "workspace:package/vite2"\
       }\
     ],\
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
       ["monorepo", ["workspace:."]],\
-      ["vite-project", ["workspace:package/vite-project"]]\
+      ["vite-project", ["workspace:package/vite-project"]],\
+      ["vite2", ["workspace:package/vite2"]]\
     ],\
     "fallbackPool": [\
     ],\
@@ -4170,6 +4175,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./package/vite-project/",\
           "packageDependencies": [\
             ["vite-project", "workspace:package/vite-project"],\
+            ["@types/react", "npm:18.0.21"],\
+            ["@types/react-dom", "npm:18.0.6"],\
+            ["@vitejs/plugin-react", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:2.1.0"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:18.2.0"],\
+            ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
+            ["vite", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:3.1.8"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
+      ["vite2", [\
+        ["workspace:package/vite2", {\
+          "packageLocation": "./package/vite2/",\
+          "packageDependencies": [\
+            ["vite2", "workspace:package/vite2"],\
             ["@types/react", "npm:18.0.21"],\
             ["@types/react-dom", "npm:18.0.6"],\
             ["@vitejs/plugin-react", "virtual:d94fdd11db39ac81d1628a5369cd5b673438d1e4be56e1fbcf52f693efad36eb3cb1e42b74d226ea86beaf9a421999820233a919d44d9113a41e11f6265516e0#npm:2.1.0"],\
